@@ -18,12 +18,7 @@ public class NumberOfClassClassObject {
         System.out.println("Come on i am your smart JVM(😂😂), Do think will create 2 class class object \n in my Heap Area for class Employee \n Just because or created 2 Object of Type \n be smart i mad it only first Time");
         System.out.println("i Had the same ID for Employee class object " +"ID1:" + getTheLoadedClassEmployee1.hashCode()+ "ID2:" + getTheLoadedClassEmployee1.hashCode() );
 
-        } 
-        else 
-        { 
-            System.out.println("Oops, i mad 2 the class Object for Employee, Twice ");
-
-         }
+        } else { System.out.println("Oops, i mad 2 the class Object for Employee, Twice "); }
     }
     
 }
