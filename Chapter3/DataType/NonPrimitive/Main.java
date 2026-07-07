@@ -8,7 +8,12 @@ public class Main {
 //        obj.getSecondLetter();
 //        obj.getUpperCaseForm();
 //        obj.modifyString("I am the added text");
-        ArrayDemo obj = new ArrayDemo();
-        obj.display();
+//        ArrayDemo obj = new ArrayDemo();
+//        obj.display();
+
+        InterfaceDemo1 obj1 = new InterfaceDemo1();
+        InterfaceDemo2 obj2 = new InterfaceDemo2();
+        obj1.interfaceMessage();
+        obj2.interfaceMessage();
     }
 }
