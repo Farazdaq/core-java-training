@@ -19,5 +19,10 @@ public class Main {
 
 //        EnumDemo today = EnumDemo.TUESDAY;
 //        System.out.println("Today is :" + " " + today);
+
+//        RecordDemo person = new RecordDemo("John", 25);
+//        System.out.println(person.name());
+//        System.out.println(person.age());
+//        System.out.println(person);
     }
 }
