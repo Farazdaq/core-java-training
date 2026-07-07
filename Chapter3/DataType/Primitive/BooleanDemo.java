@@ -1,4 +1,4 @@
-package Chapter3.DataType;
+package Chapter3.DataType.Primitive;
 
 public class BooleanDemo {
     boolean areTheyGroup = true;
