@@ -1,4 +1,4 @@
-package Chapter3.DataType.numbers;
+package Chapter3.DataType.Primitive.numbers;
 
 public class FloatingPointDemo {
      // Java treats decimal literals like 98.99 as double by default, and because converting a double to

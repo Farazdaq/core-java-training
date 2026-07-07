@@ -1,4 +1,4 @@
-package Chapter3.DataType;
+package Chapter3.DataType.Primitive;
 
 public class StaticDataTypes {
     public static void main (String[] args) {

@@ -1,4 +1,4 @@
-package Chapter3.DataType.numbers;
+package Chapter3.DataType.Primitive.numbers;
 
 public class NumbersType {
     byte numberByte = 20;
