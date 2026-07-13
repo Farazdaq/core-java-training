@@ -35,6 +35,6 @@ public class Main {
 
        // obj.getDayOfTheWeek();
        // obj.checkTraffikLight();
-        // obj.calculate(2,  '-' , 2);
+         obj.calculate(2,  '-' , 2);
     }
 }
