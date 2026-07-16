@@ -1,13 +1,14 @@
 package Chapter3.ControlFlow;
 
+import Chapter3.ControlFlow.Train.DoWhileTrain;
 import Chapter3.ControlFlow.Train.PrintNumbers;
 import Chapter3.ControlFlow.Train.SwitchTrain;
 
 public class Main {
     public static  void main(String[] args) {
         //PrintNumbers obj = new PrintNumbers();
-
-        SwitchTrain obj = new SwitchTrain();
+        //SwitchTrain obj = new SwitchTrain();
+        DoWhileTrain obj = new DoWhileTrain();
         // print numbers form 1 to 10
         //obj.getPrintedNumber();
 
@@ -35,6 +36,6 @@ public class Main {
 
        // obj.getDayOfTheWeek();
        // obj.checkTraffikLight();
-         obj.calculate(2,  '-' , 2);
+         obj.printNumber();
     }
 }
