@@ -1,0 +1,171 @@
+@startuml
+title JVM Class Loading and Healthcare Object Execution Sequence Diagram
+
+actor User
+
+participant "Main Class" as Main
+participant "JVM" as JVM
+participant "Class Loader" as Loader
+participant "Verification" as Verify
+participant "Preparation" as Prepare
+participant "Resolution" as Resolve
+participant "Initialization" as Init
+
+participant "Method Area\n(Class Metadata)" as MethodArea
+participant "Heap Memory" as Heap
+participant "Patient Object" as Patient
+participant "Doctor Object" as Doctor
+
+
+User -> Main : Start Healthcare Program
+
+
+Main -> JVM : Request Patient, Doctor classes
+
+
+JVM -> Loader : Load .class files
+
+
+Loader -> MethodArea : Create Class Metadata
+
+note right of MethodArea
+Patient Class:
+- patientId
+- name
+- age
+
+Doctor Class:
+- doctorId
+- specialization
+
+Methods:
+- bookAppointment()
+- consultDoctor()
+- diagnosePatient()
+end note
+
+
+
+Loader -> Verify : Verify Bytecode
+
+
+Verify -> Verify : Check validity\nCheck security rules
+
+
+Verify --> JVM : Bytecode Verified
+
+
+
+JVM -> Prepare : Allocate static memory
+
+
+Prepare -> MethodArea : Create static fields
+
+note right of Prepare
+Default values:
+int = 0
+Object reference = null
+end note
+
+
+
+JVM -> Resolve : Resolve symbolic references
+
+
+Resolve -> MethodArea : Link class references
+
+
+note right of Resolve
+Example:
+
+Patient.consultDoctor(Doctor doctor)
+
+Doctor reference is resolved
+
+JVM knows:
+Doctor class
+diagnosePatient()
+method address
+end note
+
+
+
+JVM -> Init : Initialize classes
+
+
+Init -> MethodArea : Assign static values
+
+
+Init -> MethodArea : Execute static blocks
+
+
+
+Main -> JVM : new Patient()
+
+
+JVM -> Heap : Allocate Patient memory
+
+
+Heap -> Patient : Create Patient Object
+
+
+note right of Patient
+Instance Fields:
+
+patientId
+name
+age
+end note
+
+
+
+
+Main -> JVM : new Doctor()
+
+
+JVM -> Heap : Allocate Doctor memory
+
+
+Heap -> Doctor : Create Doctor Object
+
+
+note right of Doctor
+Instance Fields:
+
+doctorId
+specialization
+end note
+
+
+
+
+Patient -> MethodArea : Access consultDoctor()
+
+
+MethodArea --> Patient : Execute method
+
+
+
+Patient -> Doctor : consultDoctor(doctor)
+
+
+Doctor -> MethodArea : Call diagnosePatient()
+
+
+MethodArea --> Doctor : Execute diagnosePatient()
+
+
+
+Doctor --> Patient : Diagnosis Result
+
+
+
+Patient --> Main : Appointment Completed
+
+
+
+Main --> User : Healthcare System Running
+
+
+
+@enduml
