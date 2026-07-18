@@ -5,6 +5,7 @@ import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
+
         MathClassDemo obj = new MathClassDemo();
 
         Date today = new Date();
