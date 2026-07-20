@@ -9,13 +9,13 @@ public class Main {
         //MathClassDemo obj = new MathClassDemo();
 
 
-        ConstructorDemo emp = new ConstructorDemo("John", 50000);
+       // ConstructorDemo emp = new ConstructorDemo("John", 50000);
 
-       DefaultFieldInitialization obj = new DefaultFieldInitialization();
+      // DefaultFieldInitialization obj = new DefaultFieldInitialization();
 
-        Date today = new Date();
-
-        System.out.println(today);
+       // Date today = new Date();
+        RecordDemo roj = new RecordDemo(145, "Farazdaq ahemd", "Software");
+        System.out.println(roj.getInfo());
     
     }
 
