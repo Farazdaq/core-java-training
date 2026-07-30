@@ -1,374 +1,632 @@
-<div align="center">
+#  Agentic AI Developer (GH-600) Study Guide
 
-# Core Java Training
+![GitHub](https://img.shields.io/badge/GitHub-GH--600-181717?logo=github)
+![Markdown](https://img.shields.io/badge/Markdown-Guide-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-### A Comprehensive Repository for Learning Core Java from Fundamentals to Advanced Concepts
 
-A structured Java training repository designed to help students, self-learners, and aspiring software developers master Core Java through theory, practical coding exercises, and real-world programming problems. The repository progressively covers Java fundamentals, object-oriented programming, collections, exception handling, file I/O, multithreading, and modern Java best practices.
-
-<br/>
-
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
-![Version](https://img.shields.io/badge/Version-v1.0.0-blue?style=for-the-badge)
-![Build](https://img.shields.io/badge/Build-Passing-success?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Platform](https://img.shields.io/badge/Platform-Java-lightgrey?style=for-the-badge)
-![Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-orange?style=for-the-badge)
-![Documentation](https://img.shields.io/badge/Documentation-Maintained-blueviolet?style=for-the-badge)
-
-<br/>
-<br/>
-
-# Technology Stack
-
-![Java](https://img.shields.io/badge/Language-Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![JDK](https://img.shields.io/badge/JDK-17+-red?style=flat-square)
-![Maven](https://img.shields.io/badge/Build-Maven-C71A36?style=flat-square&logo=apache-maven&logoColor=white)
-![JUnit](https://img.shields.io/badge/Testing-JUnit5-25A162?style=flat-square&logo=junit5&logoColor=white)
-![Git](https://img.shields.io/badge/Version_Control-Git-F05032?style=flat-square&logo=git&logoColor=white)
-![IntelliJ](https://img.shields.io/badge/IDE-IntelliJ_IDEA-000000?style=flat-square&logo=intellij-idea)
-![VS_Code](https://img.shields.io/badge/IDE-VS_Code-007ACC?style=flat-square&logo=visualstudiocode)
-
-</div>
+> A structured learning roadmap for the **GitHub Certified Agentic AI Developer (GH-600)** certification.
 
 ---
 
-# Table of Contents
+#  Table of Contents
 
-- [Overview](#overview)
-- [Learning Modules](#learning-modules)
-- [Repository Structure](#repository-structure)
-- [Core Topics Covered](#core-topics-covered)
-- [Technology Stack](#technology-stack)
-- [Learning Outcomes](#learning-outcomes)
-- [Getting Started](#getting-started)
+- [About the Certification](#about-the-certification)
 - [Prerequisites](#prerequisites)
-- [Running Examples](#running-examples)
-- [Practice Exercises](#practice-exercises)
-- [Coding Standards](#coding-standards)
-- [Recommended Learning Path](#recommended-learning-path)
-- [Contributing](#contributing)
-- [License](#license)
+- [Exam Knowledge Areas](#exam-knowledge-areas)
+- [Learning Roadmap (8 Weeks)](#learning-roadmap-8-weeks)
+- [Hands-on Projects](#hands-on-projects)
+- [Recommended Learning Resources](#recommended-learning-resources)
+- [Portfolio Ideas](#portfolio-ideas)
+- [Study Tips](#study-tips)
+- [Final Checklist](#final-checklist)
 
 ---
 
-# Overview
+# About the Certification
 
-**Core Java Training** is a structured educational repository that provides a complete roadmap for learning Java programming from the ground up.
+The **GitHub Certified Agentic AI Developer (GH-600)** certification validates your ability to build, integrate, and operate AI-powered agents within GitHub's development ecosystem.
 
-The repository emphasizes:
-
-- Strong programming fundamentals
-- Clean coding practices
-- Object-Oriented Design
-- Problem-solving skills
-- Real-world coding examples
-- Interview preparation
-- Hands-on exercises
-
-It serves as both a learning resource and a long-term reference for developers who want to build a solid foundation in Java.
+Unlike traditional AI certifications, GH-600 emphasizes **hands-on engineering skills** rather than theoretical knowledge. Candidates are expected to understand how AI agents collaborate with developers, interact with external tools, automate software engineering tasks, and integrate into GitHub workflows.
 
 ---
 
-# Learning Modules
+# Prerequisites
 
-| Module | Description | Level |
-|---|---|---|
-| Java Fundamentals | Variables, Data Types, Operators, Input/Output | Beginner |
-| Control Flow | Conditions, Loops, Switch Statements | Beginner |
-| Methods | Functions, Parameters, Return Types | Beginner |
-| Object-Oriented Programming | Classes, Objects, Encapsulation, Inheritance, Polymorphism, Abstraction | Intermediate |
-| Exception Handling | Checked & Unchecked Exceptions, Custom Exceptions | Intermediate |
-| Collections Framework | List, Set, Map, Queue, Iterators | Intermediate |
-| Generics | Generic Classes, Methods, Wildcards | Intermediate |
-| File Handling | Reading & Writing Files, Serialization | Intermediate |
-| Multithreading | Threads, Synchronization, Executors | Advanced |
-| Java 8+ Features | Lambda Expressions, Streams, Functional Interfaces, Optional | Advanced |
-| Problem Solving | Coding Challenges & Algorithm Practice | All Levels |
+Before beginning GH-600 preparation, you should be comfortable with:
+
+- Git & GitHub
+- Software development lifecycle (SDLC)
+- REST APIs
+- JSON
+- Command Line (CLI)
+- VS Code
+- Basic AI concepts
+- Programming fundamentals (Python, JavaScript, C#, Java, etc.)
 
 ---
 
-# Repository Structure
+# Exam Knowledge Areas
 
-```text
-core-java-training/
-│
-├── 01-java-basics/
-├── 02-control-flow/
-├── 03-methods/
-├── 04-oop/
-├── 05-strings/
-├── 06-arrays/
-├── 07-exception-handling/
-├── 08-collections/
-├── 09-generics/
-├── 10-file-handling/
-├── 11-multithreading/
-├── 12-java-8-features/
-├── 13-problem-solving/
-├── exercises/
-├── projects/
-├── notes/
-└── README.md
-```
+## 1. GitHub Copilot
+
+Study:
+
+- Copilot Chat
+- Agent Mode
+- Inline completions
+- Workspace understanding
+- Code explanation
+- Code generation
+- Documentation generation
+- Refactoring
+- Debugging
+- Unit test generation
+- Pull Request reviews
 
 ---
 
-# Core Topics Covered
+## 2. GitHub Platform
 
-## Java Fundamentals
+Understand:
 
-- Java Syntax
-- Variables
-- Data Types
-- Operators
-- Type Casting
-- User Input
-- Comments
-- Constants
-
----
-
-## Control Flow
-
-- if / else
-- switch
-- for loops
-- while loops
-- do-while loops
-- break
-- continue
+- Repositories
+- Branches
+- Pull Requests
+- Issues
+- Discussions
+- Projects
+- GitHub Codespaces
+- GitHub Models
+- GitHub CLI
+- Security features
 
 ---
 
-## Object-Oriented Programming
+## 3. GitHub Actions
 
-- Classes
-- Objects
-- Constructors
-- Methods
-- Encapsulation
-- Inheritance
-- Polymorphism
-- Abstraction
-- Interfaces
-- Packages
+Learn:
 
----
-
-## Exception Handling
-
-- try
-- catch
-- finally
-- throw
-- throws
-- Custom Exceptions
+- Workflow YAML syntax
+- Jobs
+- Steps
+- Runners
+- Matrix builds
+- Artifacts
+- Secrets
+- Environment variables
+- Reusable workflows
+- Composite actions
 
 ---
 
-## Collections Framework
+## 4. Large Language Models (LLMs) & Agent Fundamentals
 
-- ArrayList
-- LinkedList
-- HashSet
-- TreeSet
-- HashMap
-- TreeMap
-- Queue
-- Stack
-- PriorityQueue
-- Iterators
+Master the core AI concepts behind intelligent agents.
 
----
+### LLM Fundamentals
 
-## Java 8 Features
+- Tokens
+- Embeddings
+- Context Windows
+- Temperature
+- Top-p Sampling
+- Token Limits
+- Cost Optimization
 
-- Lambda Expressions
-- Functional Interfaces
-- Method References
-- Streams API
-- Optional
-- Date & Time API
+### Prompt Engineering
 
----
+- Zero-shot prompting
+- One-shot prompting
+- Few-shot prompting
+- Chain of Thought (CoT)
+- Prompt Templates
+- System Prompts
+- Structured Outputs
 
-## Problem Solving
+### Agent Concepts
 
-- Pattern Programs
-- Number Programs
-- String Problems
-- Array Problems
-- Collection Problems
-- Object-Oriented Challenges
-- Coding Interview Questions
+- AI Agents
+- Agent Planning
+- Tool Calling
+- Function Calling
+- Memory
+- Multi-Agent Systems
+- Agent Orchestration
+- Reflection
+- ReAct Pattern
 
----
+### Retrieval-Augmented Generation (RAG)
 
-# Technology Stack
+Study:
 
-## Programming Language
+- Embeddings
+- Vector Databases
+- Similarity Search
+- Chunking
+- Retrieval Pipelines
+- Grounding
+- Context Injection
 
-| Technology | Purpose |
-|---|---|
-| Java | Core Programming Language |
+### AI Reliability
 
----
+Understand:
 
-## Development Tools
-
-| Technology | Purpose |
-|---|---|
-| IntelliJ IDEA | Java Development |
-| VS Code | Lightweight Development |
-| Git | Version Control |
-| Maven | Dependency Management |
-| JUnit 5 | Unit Testing |
-
----
-
-# Learning Outcomes
-
-After completing this repository, learners will be able to:
-
-- Understand Java syntax and programming fundamentals
-- Write clean, maintainable Java code
-- Apply Object-Oriented Programming principles
-- Work with Java Collections effectively
-- Handle exceptions properly
-- Read from and write to files
-- Build multithreaded applications
-- Use Java 8+ modern programming features
-- Solve programming and interview problems confidently
+- Hallucinations
+- Reasoning vs Generation
+- Model Limitations
+- Failure Recovery
+- Confidence Levels
 
 ---
 
-# Getting Started
+## 5. Model Context Protocol (MCP)
 
-## Prerequisites
+One of the most important topics in GH-600.
 
-Install the following software:
+Learn:
 
-- Java JDK 17 or later
-- IntelliJ IDEA or VS Code
-- Git
-- Maven (optional)
+### MCP Architecture
 
----
+- MCP Client
+- MCP Server
+- Communication Flow
+- JSON-RPC
 
-# Installation
+### MCP Components
 
-```bash
-git clone https://github.com/your-username/core-java-training.git
-```
+- Tools
+- Resources
+- Prompts
 
-```bash
-cd core-java-training
-```
+### MCP Development
 
----
+- Tool Definitions
+- Resource Definitions
+- Prompt Templates
+- Permissions
+- Security
+- Authentication
 
-# Running Examples
+### Integrations
 
-Compile a Java file:
+Build MCP servers for:
 
-```bash
-javac Main.java
-```
-
-Run the program:
-
-```bash
-java Main
-```
-
-If using Maven:
-
-```bash
-mvn compile
-mvn exec:java
-```
+- Calculator
+- Weather API
+- Database Query
+- GitHub Repository Search
+- File System Access
 
 ---
 
-# Practice Exercises
+## 6. AI Safety & Responsible AI
 
-The repository includes:
+Study:
 
-- Beginner coding exercises
-- Mini programming assignments
-- Object-oriented design exercises
-- Collection practice questions
-- Exception handling challenges
-- Java 8 practice examples
-- Interview coding problems
-- Mini console applications
-
----
-
-# Coding Standards
-
-Please follow these guidelines:
-
-- Use meaningful class and variable names
-- Follow Java naming conventions
-- Write reusable methods
-- Add comments where appropriate
-- Keep classes focused on a single responsibility
-- Format code consistently
+- Human-in-the-loop systems
+- Guardrails
+- Prompt Injection
+- Jailbreak Attacks
+- Data Privacy
+- Responsible AI
+- Permission Boundaries
+- Logging
+- Auditing
+- Evaluation Metrics
+- Safety Testing
 
 ---
 
-# Recommended Learning Path
+## 7. Agent Evaluation & Observability
 
-1. Java Fundamentals
-2. Variables & Data Types
-3. Operators
-4. Control Flow
-5. Methods
-6. Arrays & Strings
-7. Object-Oriented Programming
-8. Exception Handling
-9. Collections Framework
-10. File Handling
-11. Generics
-12. Multithreading
-13. Java 8 Features
-14. Practice Problems
-15. Mini Projects
+Learn how to measure agent quality.
 
----
+Topics:
 
-# Contributing
-
-Contributions are welcome.
-
-To contribute:
-
-1. Fork the repository
-2. Create a feature branch
-3. Add new examples or improve existing content
-4. Submit a pull request
-
-Please ensure:
-
-- Code is well documented
-- Examples compile successfully
-- Folder structure remains organized
-- Naming conventions are followed
+- Prompt Evaluation
+- Agent Evaluation
+- Reliability
+- Latency
+- Token Usage
+- Cost Tracking
+- Logging
+- Tracing
+- Monitoring
+- Error Analysis
 
 ---
 
-# License
+## 8. GitHub AI Integration
 
-MIT License
+Study how AI integrates into GitHub workflows.
+
+Topics:
+
+- AI-assisted Pull Requests
+- AI Issue Triage
+- AI Code Review
+- Documentation Generation
+- Test Generation
+- Workflow Automation
+- CI/CD Integration
 
 ---
 
-<div align="center">
+# Learning Roadmap (8 Weeks)
 
-### Keep Learning • Keep Coding • Build Strong Java Fundamentals ☕
+---
 
-**Happy Coding!**
+## Week 1 — AI & Agent Fundamentals
 
-</div>
+### Learn
+
+- How LLMs work
+- Tokens
+- Context Windows
+- Prompt Engineering
+- Tool Calling
+- AI Agents
+- Planning
+- Memory
+- RAG
+- MCP Overview
+- Human-in-the-loop
+
+### Practice
+
+- Build prompts
+- Compare prompting techniques
+- Experiment with multiple LLMs
+
+---
+
+## Week 2 — GitHub Copilot
+
+Master:
+
+- Copilot Chat
+- Agent Mode
+- Workspace Understanding
+- Code Generation
+- Documentation
+- Debugging
+- Refactoring
+- Unit Testing
+- Pull Request Reviews
+
+### Daily Practice
+
+Spend at least **1–2 hours** using Copilot inside VS Code.
+
+---
+
+## Week 3 — Model Context Protocol (MCP)
+
+Learn:
+
+- MCP Architecture
+- MCP Client
+- MCP Server
+- Tool Definitions
+- Resources
+- Prompts
+- Authentication
+- Permissions
+
+### Build
+
+Create an MCP server exposing:
+
+- Calculator Tool
+- Weather Tool
+- Database Tool
+- GitHub Search Tool
+
+---
+
+## Weeks 4–5 — Build AI Agents
+
+Create real-world projects.
+
+### Project 1
+
+AI Code Reviewer
+
+Features:
+
+- Analyze code
+- Detect bugs
+- Suggest improvements
+
+---
+
+### Project 2
+
+Documentation Generator
+
+Features:
+
+- Generate README
+- API Documentation
+- Architecture Documentation
+
+---
+
+### Project 3
+
+Pull Request Assistant
+
+Features:
+
+- Review PRs
+- Explain changes
+- Suggest fixes
+
+---
+
+### Project 4
+
+Bug Triage Agent
+
+Features:
+
+- Categorize Issues
+- Assign Priority
+- Recommend Labels
+
+---
+
+### Project 5
+
+Issue Planning Agent
+
+Features:
+
+- Break Issues into Tasks
+- Estimate Complexity
+- Generate Checklists
+
+---
+
+Each project should include:
+
+- Tool Calling
+- Memory
+- API Integration
+- Structured Outputs
+- Error Handling
+- Logging
+
+---
+
+## Week 6 — GitHub Ecosystem
+
+Become comfortable with:
+
+- GitHub Actions
+- Workflows
+- Secrets
+- Branch Protection
+- Pull Requests
+- Issues
+- Discussions
+- Projects
+- Security Scanning
+- Dependabot
+
+---
+
+## Week 7 — Evaluation & AI Safety
+
+Study:
+
+- Hallucinations
+- Agent Failures
+- Logging
+- Metrics
+- Cost Optimization
+- Token Usage
+- Responsible AI
+- Prompt Injection
+- Security
+- Guardrails
+
+---
+
+## Week 8 — Mock Exam
+
+Take practice exams.
+
+Review weak areas:
+
+- MCP
+- Copilot
+- GitHub Actions
+- Agent Evaluation
+- Tool Calling
+- RAG
+- Prompt Engineering
+
+Build another small project for every weak topic.
+
+---
+
+# Hands-on Projects
+
+Recommended projects:
+
+- AI Code Reviewer
+- AI Pull Request Assistant
+- AI Issue Triage Agent
+- AI Documentation Writer
+- AI Test Generator
+- AI Debugging Assistant
+- AI Architecture Advisor
+- Multi-Agent Software Engineering Assistant
+
+Each project should include:
+
+- GitHub Repository
+- README
+- Architecture Diagram
+- Screenshots
+- Demo GIF
+- Installation Guide
+
+---
+
+# Recommended Learning Resources
+
+## Official Resources
+
+- GitHub Certified Agentic AI Developer Learning Path (Microsoft Learn)
+- GitHub Skills
+- GitHub Copilot Documentation
+- GitHub Models Documentation
+- GitHub Actions Documentation
+- Model Context Protocol Documentation
+
+## AI Resources
+
+- Anthropic MCP Specification
+- OpenAI Agents Documentation
+- LangChain Academy
+- Microsoft Build Sessions
+- GitHub Universe Sessions
+
+---
+
+# Portfolio Ideas
+
+Build a GitHub portfolio containing:
+
+- AI Code Reviewer
+- AI Pull Request Assistant
+- AI Issue Planner
+- AI Documentation Generator
+- AI Test Generator
+- AI API Debugger
+- AI Architecture Advisor
+- Multi-Agent Development Assistant
+
+Each repository should include:
+
+- Clean Architecture
+- README
+- Diagrams
+- Screenshots
+- GitHub Actions CI
+- Tests
+- Documentation
+
+---
+
+# Study Tips
+
+ Build while learning.
+
+ Use GitHub Copilot daily.
+
+ Read official documentation first.
+
+ Build small projects before large ones.
+
+ Practice GitHub Actions workflows.
+
+ Learn MCP by implementing servers yourself.
+
+ Focus on tool calling rather than prompt engineering alone.
+
+ Understand why an agent makes decisions—not just how it generates text.
+
+---
+
+# Final Checklist
+
+## GitHub
+
+- [ ] GitHub Basics
+- [ ] GitHub Actions
+- [ ] GitHub Copilot
+- [ ] GitHub Models
+- [ ] GitHub CLI
+- [ ] Pull Requests
+- [ ] Issues
+- [ ] Projects
+
+---
+
+## AI
+
+- [ ] LLM Fundamentals
+- [ ] Prompt Engineering
+- [ ] Tool Calling
+- [ ] Memory
+- [ ] RAG
+- [ ] Hallucinations
+- [ ] Agent Planning
+- [ ] Multi-Agent Systems
+
+---
+
+## MCP
+
+- [ ] Architecture
+- [ ] Client
+- [ ] Server
+- [ ] Tools
+- [ ] Resources
+- [ ] Prompts
+- [ ] Authentication
+- [ ] Permissions
+- [ ] Build an MCP Server
+
+---
+
+## Safety
+
+- [ ] Responsible AI
+- [ ] Prompt Injection
+- [ ] Guardrails
+- [ ] Human-in-the-loop
+- [ ] Logging
+- [ ] Auditing
+- [ ] Privacy
+- [ ] Security
+
+---
+
+## Projects
+
+- [ ] AI Code Reviewer
+- [ ] AI PR Assistant
+- [ ] AI Documentation Generator
+- [ ] AI Test Generator
+- [ ] AI Issue Triage
+- [ ] AI Architecture Advisor
+
+---
+
+## Exam Readiness
+
+- [ ] Completed Official Learning Path
+- [ ] Built at least 5 AI Agent Projects
+- [ ] Practiced GitHub Copilot Daily
+- [ ] Built an MCP Server
+- [ ] Created GitHub Actions Workflows
+- [ ] Reviewed AI Safety Concepts
+- [ ] Completed Mock Exams
+- [ ] Confident with End-to-End Agent Development
+
+---
+
+##  Goal
+
+By completing this roadmap, you will be able to:
+
+- Design and build AI agents for software engineering workflows.
+- Integrate agents with GitHub Copilot, GitHub Actions, and MCP.
+- Develop secure, reliable, and observable AI applications.
+- Build a strong GitHub portfolio demonstrating practical Agentic AI development skills.
+- Be well-prepared for the **GitHub Certified Agentic AI Developer (GH-600)** certification exam.
