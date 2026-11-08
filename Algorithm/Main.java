@@ -1,8 +1,7 @@
 package Algorithm;
 
+import java.util.*;
+
 public class Main {
-    public static void main(String[] args) {
-        BacktrackingDemo obj = new BacktrackingDemo();
-        obj.getChoices();
-    }
+     
 }
